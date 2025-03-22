@@ -1,0 +1,94 @@
+{% extends 'link.html'%}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+<div class="house">
+
+    <div class="user_text-preview">
+        <h4>Analyzed Text Preview</h4>
+        <div class="glass-preview">
+            <p class="preview-text">{{ variables['suspicious_text'] }}</p>
+        </div>
+    </div>
+
+
+    <div class="card result-container" id="results">
+        <h3>Analysis Results</h3>
+        <div class="dynamic-underline"></div>
+
+        <div class="result-grid">
+            
+            <div class="row">
+                <h4>Scam Likeliness</h4>
+                <div class="risk-meter">
+                    <div class="risk-fill" style="width: {{variables['score']}}%;
+                                                    background: 
+                                                    {% if variables['score'] <= 20 %} linear-gradient(90deg, rgb(0, 200, 0) 0%, rgb(144, 238, 144) 100%);
+                                                    {% elif variables['score'] <= 60 %} linear-gradient(90deg, rgb(255, 165, 0) 0%, rgb(255, 223, 0) 100%);
+                                                    {% else %} linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 99, 71) 100%);
+                                                    {% endif %};">
+                    </div>
+                </div>
+                <h2>{{variables['score']}}%</h2>
+
+            </div>
+
+            <div class="row">
+                <h4>Keywords</h4>
+                <div class="keywords" id="keywords">
+                    {% for item in variables['keywords']%}
+                        <div class="keyword-container">{{item}}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="threat-analysis">
+            <h5>Threat Breakdown</h5>
+            <ul class="threat-list">
+                <!-- <li class="item" id="ai-analysis">AI Analysis: {{variables['reasoning']}}</li>
+                <li class="item" id="word-search-analysis">Keywords Analysis: {{variables['keywords_display']}}</li>
+                <li class="item" id="sentiment-analysis">Sentiment Analysis: {{variables['emotions']}}</li> -->
+
+                <li class="threat-item">
+                    <div class="threat-category">
+                        <span class="category-title">AI Analysis:</span>
+                        <p class="category-content">{{ variables['reasoning'] }}</p>
+                    </div>
+                </li>
+
+                <li class="threat-item">
+                    <div class="threat-category">
+                        <span class="category-title">Keyword Analysis:</span>
+                        {% if variables['keywords'] == [] %}
+                            <p class="category-content">{{ variables['safe_keyowords_display'] }}</p>
+                        {% else %}
+                            <p class="category-content">{{ variables['keywords_display'] }}</p>
+                        {% endif %}
+
+                    </div>
+                </li>
+
+                <li class="threat-item">
+                    <div class="threat-category">
+                        <span class="category-title">Sentiment Analysis:</span>
+                        <p class="category-content">Top 2 Emotions are {{ variables['emotions'] }}</p>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="navigation">
+        <a href="{{url_for('main')}}" class="btn-back">
+            Analyze Another Text -> 
+        </a>
+    </div>
+</div>
+
+{% endblock %}

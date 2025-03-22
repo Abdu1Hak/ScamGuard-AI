@@ -1,0 +1,37 @@
+{% extends 'link.html' %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+    <div class="house">
+        <div class="card">
+            <form id="detect-form"  method="post" action="{{ url_for('analyze') }}">
+                <div class="upper-house">
+                    <label for="message" >Enter Suspicious Text Here:</label>
+                    <textarea
+                        id="message"                
+                        placeholder="Paste Message Here:"
+                        name = "suspicious_text"></textarea>
+                </div>
+                <div class="lower-house">
+                    <button class="analyze" type="submit">
+                        Analyze Text
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    <script>
+        // Button Loading State
+        document.getElementById("detect-form").addEventListener('submit', function() {
+            const btn = this.querySelector('button');
+            btn.innerHTML = 'Analyzing...';
+            btn.disabled = true;
+        });
+    </script>
+
+{% endblock %}
+
