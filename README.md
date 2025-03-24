@@ -56,6 +56,13 @@ If the link doesn’t work, here are screenshots of the **UI** for reference.
 ---
 
 ![image](https://github.com/user-attachments/assets/d093c20f-9a22-4a74-9160-80695a39e726)
+
+Tested against a typical scam message that prompts user to click on link and asks for info:
+
 ![image](https://github.com/user-attachments/assets/af66760b-2e9f-4f06-80c5-153a64d4fcea)
+
+Tested against a simple greeting: "Hi!"
+
+![image](https://github.com/user-attachments/assets/ea442f4d-cede-4ea2-b11f-6b5444a94ebe)
 
 
