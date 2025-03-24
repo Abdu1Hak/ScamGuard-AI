@@ -1,7 +1,7 @@
 from flashtext import KeywordProcessor
 
 # STORE SCAM WORD
-file_path = "scam_repo/common_spam_words_2020.txt"
+file_path = "common_spam_words_2020.txt"
 def scam_keywords(file_path):
     with open(file_path, "r", encoding='utf-8') as file:
         keywords = [line.strip().lower() for line in file.readlines()] 
