@@ -36,6 +36,7 @@ The three analyses—**Sentiment Analysis**, **Word Search**, and **AI Analysis*
 - **Scam Likelihood:** A percentage indicating the scam likelihood.
 - **Suspicious Keywords:** Keywords from the message that are immediately red-flagged.
 - **Threat Breakdown:** A well-rounded explanation of the message, based on all three analysis methods.
+- **Tip:** Keep In Mind, anything below 20% is not considered a threat, between 20%-60% entertains a possibility but minimal threat, however, above 60% > is highly risky
 
 ---
 
@@ -65,3 +66,5 @@ Tested against a typical scam message that prompts user to click on link and ask
 Tested against a simple greeting: "Hi!"
 
 ![image](https://github.com/user-attachments/assets/4ba3fee8-33c1-434d-b86a-709c9295073b)
+
+
