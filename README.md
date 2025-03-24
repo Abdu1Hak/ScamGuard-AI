@@ -4,7 +4,6 @@
 This AI-based application provides an accurate way to determine the likelihood that a message is a scam. It does this by analyzing messages in three distinct ways to give you a well-rounded response. Unlike a standard project, this application was created out of a **personal experience**—I received **5 scam messages** in a single day, Ridiculous! This motivated me to craft a solution using what I'm equally passionate about and skilled in: code. 
 
 ---
-
 **Tech**
 - Backend: Python, Flask
 - Frontend: HTML/CSS, Vanilla JS
