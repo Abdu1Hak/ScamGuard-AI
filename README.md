@@ -5,6 +5,12 @@ This AI-based application provides an accurate way to determine the likelihood t
 
 ---
 
+**Tech**
+- Backend: Python, Flask
+- Frontend: HTML/CSS, Vanilla JS
+- API & Libraries: Huggingface pipeline/transformers, Gemini 2.0 Flash API, Render
+---
+
 ### **How It Works**
 
 1. **Sentiment Analysis (20%)**  
