@@ -10,34 +10,22 @@ This AI-based application provides an accurate way to determine the likelihood t
 - API & Libraries: Huggingface pipeline/transformers, Gemini 2.0 Flash API, Render
 
 ## 🛠️ Tech Stack
-
-<div align="center">
-
-### **Backend**
+Backend:
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-2.3%2B-000000?logo=flask&logoColor=white)
 
-### **Frontend** 
+Frontend:
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=black)
 
-### **APIs & AI**
+Libraries:
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Pipelines-FFD21E?logo=huggingface&logoColor=black)
-![Gemini](https://img.shields.io/badge/Gemini_2.0_Flash-API-4285F4?logo=google-cloud&logoColor=white)
-![YouTube API](https://img.shields.io/badge/YouTube_API-v3-FF0000?logo=youtube&logoColor=white)
-
-### **ML/NLP**
-![Transformers](https://img.shields.io/badge/🤗_Transformers-4.30%2B-FFD21E?logo=huggingface&logoColor=black)
-
-### **Infrastructure**
+![Gemini AI Flash](https://img.shields.io/badge/Gemini_2.0_Flash-API-4285F4?logo=google-cloud&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-Cloud_Deploy-46E3B7?logo=render&logoColor=white)
 
-### **Data**
-![Pandas](https://img.shields.io/badge/Pandas-2.1%2B-150458?logo=pandas&logoColor=white)
-![Google Sheets](https://img.shields.io/badge/Google_Sheets-API-34A853?logo=google-sheets&logoColor=white)
 
-</div>
+
 
 ---
 
