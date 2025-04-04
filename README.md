@@ -16,14 +16,14 @@ This AI-based application provides an accurate way to determine the likelihood t
    The first step in the analysis process is **Sentiment Analysis**. I used a trained **NLP model** from Hugging Face to determine the **top 2 emotions** present in the message with their respective percentages.  
    - **Why does this matter?**  
      Scam messages rely heavily on **emotional manipulation**, such as fear, urgency, and excitement, to trick people into acting impulsively. By identifying these emotions, we can better gauge whether the message might be a scam.  
-   - **How we handle it:**  
+   - **How ScamGuard handles it:**  
      The model identifies six core emotions, which are weighted based on their relevance to scams. If the sentiment analysis results show low emotional manipulation but high AI analysis, we adjust its impact to just **5%** of the overall likelihood score.  
 
 2. **Word Search Analysis (10%)**  
    The system scans the message for common scam-related words using a **public GitHub repository** containing over **500 known scam keywords**.  
    - **Why this works:**  
      Scams rely on suspicious keywords to convey urgency or pressure. By detecting these words, we can flag messages as risky.  
-   - **How we handle it:**  
+   - **How ScamGuard handles it:**  
      The frequency of scam-related words in the message influences the **scam likelihood**. The response also supports a scaling mechanism to avoid disproportionality in weighing these keywords. If no keywords are found but the AI analysis response is high, the **suspicious keywords** suggested by AI are then displayed
 
 3. **AI Analysis (70%)**  
