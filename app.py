@@ -61,7 +61,7 @@ def results():
     # Leverage AI incase no keywords were returned from scam, although AI score is high
     if ai_score > 50 and (scam_matching_words == []):
         scam_matching_words = ai_keywords
-        with open('scam_repo/common_spam_words_2020.txt', 'w') as file:
+        with open('common_spam_words_2020.txt', 'a') as file:
             for word in scam_matching_words:
                 file.write(word + '\n')
 
